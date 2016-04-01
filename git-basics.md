@@ -41,3 +41,7 @@
     #EX:
       git checkout tags/v4.4-rc4 -b linux-4.4-rc4  #-> In general the branch name must not be similar to the tag version to avoid 
                                                       the confusion between branch and tag
+#10. To merge the newer changes commit back to older kernel version
+	git merge #<commithash>  #-> Merge all the changes/commits up to the provided commit hash
+	git cherry-pick #<commithash>  #-> Merge only the povided commit change on top of the current commit.
+	
