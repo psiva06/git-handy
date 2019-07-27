@@ -32,7 +32,8 @@
     git branch  #-> The active branch will always be highlighte in different color and marked "*"
     
 #8. To clean all untracked files and directories
-	  git clean -f #-> only files
+	  git clean -f #-> To delete only files
+
 	  git clean -d #-> only directories
 	  git clean -fd #-> Both files and directories 
 	  
