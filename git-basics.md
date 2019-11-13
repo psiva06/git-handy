@@ -7,7 +7,7 @@
 #2. To clone the repository
 
     git clone "remote repository"
-    git clone --bare "remote repository" #-> This command will create bare repository and you won't get the working tree 
+    git clone --bare "remote repository" #-> This command will create bare repository and you wont get the working tree 
 
 #3. To list the branches
 
@@ -55,3 +55,10 @@
 	git merge #<commithash>  #-> Merge all the changes/commits up to the provided commit hash
 	git cherry-pick #<commithash>  #-> Merge only the povided commit change on top of the current commit.
 	
+#11. To code changes in very last commit
+        git add #<filename> #-> Name of the new file added.
+        git commit --amend  #->This newly added file will be part of very last commit. It doesnt create new commit or changeid.
+
+#12. To change the commit username after cherry pick or change author of very last commit
+        git cherry-pick #<commithash>  #-> Merge only the povided commit change on top of the current commit.
+        git commit --amend --author="sivasubramanian palanisamy <mailid@mail.com>"
