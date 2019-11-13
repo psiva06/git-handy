@@ -65,3 +65,14 @@
         git cherry-pick #<commithash>  #-> Merge only the povided commit change on top of the current commit.
         git commit --amend --author="sivasubramanian palanisamy <mailid@mail.com>"
 
+#13. To add git diff tool. This is usefull when conflict happens while merging
+
+	git config --global diff.tool tkdiff
+	git config --global merge.tool tkdiff
+	git config --global --add difftool.prompt false
+
+#14. To show all files changed
+
+	git show --name-only --oneline HEAD
+
+
