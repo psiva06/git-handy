@@ -56,9 +56,12 @@
 	git cherry-pick #<commithash>  #-> Merge only the povided commit change on top of the current commit.
 	
 #11. To code changes in very last commit
+
         git add #<filename> #-> Name of the new file added.
         git commit --amend  #->This newly added file will be part of very last commit. It doesnt create new commit or changeid.
 
 #12. To change the commit username after cherry pick or change author of very last commit
+
         git cherry-pick #<commithash>  #-> Merge only the povided commit change on top of the current commit.
         git commit --amend --author="sivasubramanian palanisamy <mailid@mail.com>"
+
